@@ -1,1 +1,3 @@
+    sudo apt-get install python3-pip
     sudo pip3 install virtualen
+    sudo pip3 install face_recognition
