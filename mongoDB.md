@@ -2,6 +2,8 @@
     echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
     sudo apt-get update
     sudo apt-get install -y mongodb-org
+    sudo systemctl enable mongod
+    
 ### start
     sudo systemctl start mongod
 ### status    
@@ -10,4 +12,3 @@
     sudo systemctl stop mongod
 ### restart
     sudo systemctl restart mongod
-
