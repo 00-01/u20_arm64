@@ -1,10 +1,10 @@
-## display resolution
-### open this
+## - display resolution
+### open
     sudo nano /boot/firmware/usercfg.txt
-### add the following
+### add
     disable_overscan=1
 
-## bluetooth
-    sudo apt install pi-bluetooth
+## - bluetooth
+    sudo apt-get install pi-bluetooth
 
 sudo reboot
