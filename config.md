@@ -5,6 +5,15 @@
     disable_overscan=1
 
 ## - bluetooth
-    sudo apt-get install pi-bluetooth
+    sudo apt install pi-bluetooth
+    
+## - ssh
+    sudo systemctl enable ssh
+    sudo systemctl start ssh
 
-sudo reboot
+## - software-center
+    sudo apt install ubuntu-software
+    sudo apt install gnome-software
+
+## reboot
+    sudo reboot
