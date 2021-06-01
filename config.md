@@ -1,7 +1,7 @@
 ## - display resolution
-### open
+### open:
     sudo nano /boot/firmware/usercfg.txt
-### add
+### add:
     disable_overscan=1
 
 ## - bluetooth
@@ -16,8 +16,9 @@
     sudo apt install gnome-software
     
 ## - csi camera
+### open:
     sudo nano /boot/firmware/config.txt
-### add these lines:
+### add:
     gpu_mem=512
     disable_camera_led=1
     start_file=start4x.elf
