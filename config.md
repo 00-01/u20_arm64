@@ -14,20 +14,26 @@
     #!/bin/sh
     xrandr --newmode "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
     xrandr --addmode default 1920x1080_60.00
-
     
 
 ## - bluetooth
     sudo apt install pi-bluetooth
-    
+
+
 ## - ssh
     sudo systemctl enable ssh
     sudo systemctl start ssh
+### open:
+    sudo nano /etc/ssh/sshd_config
+### chage: (#PasswordAuthentication yes) -> (PasswordAuthentication no)
+    service sshd restart
+
 
 ## - software-center
     sudo apt install ubuntu-software
     sudo apt install gnome-software
-    
+
+
 ## - csi camera
 ### open:
     sudo nano /boot/firmware/config.txt
@@ -36,6 +42,7 @@
     disable_camera_led=1
     start_file=start4x.elf
     fixup_file=fixup4x.dat
+
 
 ## reboot
     sudo reboot
